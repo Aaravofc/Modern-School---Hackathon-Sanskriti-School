@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pollushield Fabrix</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url("background.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      }
+      header {
+        background-color: #000000;
+        padding: 10px;
+        text-align: center;
+      }
+      h1 {
+        color: rgb(255, 255, 255);
+        font-family: Brush script M7, cursive;
+        font-size: 50px;
+      }
+      .clothes-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+      }
+      .clothes-item {
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        cursor: pointer; /* Add cursor pointer */
+      }
+      .clothes-item img {
+        width: 100%;
+        border-radius: 5px;
+      }
+      .checkout-button {
+        background-color: #000000;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+      .description {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .description img {
+        width: 200px;
+        border-radius: 5px;
+      }
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Pollushield Fabrix</h1>
+    </header>
+    <div class="navbar">
+      <a href="#clothes-container">Clothes</a>
+      <a href="#description">About Us</a>
+    </div>
+    <div class="clothes-container" id="clothes-container">
+      <div class="clothes-item" id="item1">
+        <img src="EVM1.jpeg" height="300px" width="300px" />
+        <button onclick="prevImage('item1')" id="prevbutton1">Previous</button>
+        <button onclick="nextImage('item1')" id="nextbutton1">Next</button>
+        <p>White T-Shirt</p>
+        <ul>
+          <li>
+            White coloured T-shirt induced with activated carbons for absorbing
+            air pollutants
+          </li>
+          <li>Highly durable</li>
+          <li>Sizes available: Small/ Medium/ Large</li>
+          <li>Price: $30.30</li>
+          <li>International shipping available</li>
+        </ul>
+        <a href="Checkout.html" class="checkout-button">Checkout</a>
+      </div>
+
+      <div class="clothes-item" id="item2">
+        <img src="EVM2.png" alt="Clothes 2" height="300px" width="300px" />
+        <button onclick="prevImage('item2')" id="prevbutton2">Previous</button>
+        <button onclick="nextImage('item2')" id="nextbutton2">Next</button>
+        <p>White T-Shirt</p>
+        <ul>
+          <li>
+            White coloured T-shirt induced with activated carbons for absorbing
+            air pollutants
+          </li>
+          <li>Highly durable</li>
+          <li>Sizes available: Small/ Medium/ Large</li>
+          <li>Price: $30.30</li>
+          <li>International shipping available</li>
+        </ul>
+        <a href="Checkout.html" class="checkout-button">Checkout</a>
+      </div>
+      <div class="clothes-item" id="item3">
+        <img src="EVM3.jpeg" alt="Clothes 3" height="300px" width="300px" />
+        <button onclick="prevImage('item3')" id="prevbutton3">Previous</button>
+        <button onclick="nextImage('item3')" id="nextbutton3">Next</button>
+        <p>Black T-Shirt</p>
+        <ul>
+          <li>
+            Black coloured T-shirt with high concentration of activated carbons
+            for absorbing air pollutants
+          </li>
+          <li>Highly durable</li>
+          <li>Sizes available: Small/ Medium/ Large</li>
+          <li>Price: $30.30</li>
+          <li>International shipping available</li>
+        </ul>
+        <a href="Checkout.html" class="checkout-button">Checkout</a>
+      </div>
+      <div class="clothes-item">
+        <img src="Fabric.jpeg" alt="" height="300px" width="300px" />
+        <p>Pollushield Fabric</p>
+        <ul>
+          <input type="color" />
+          <select id="length" name="length" required>
+            <option value="1 metre">1 metres</option>
+            <option value="2 metres">2 metres</option>
+            <option value="3 metres">3 metres</option>
+            <option value="4 metres">4 metres</option>
+            <option value="5 metres">5 metres</option>
+            <option value="6 metres">6 metres</option>
+            <option value="7 metres">7 metres</option>
+            <option value="8 metres">8 metres</option>
+            <option value="9 metres">9 metres</option>
+            <option value="10 metres">10 metres</option>
+            <option value="11 metres">11 metres</option>
+            <option value="12 metres">12 metres</option>
+          </select>
+          <li>Highly durable</li>
+          <li>Price: $4.99/metre</li>
+          <li>International shipping available</li>
+        </ul>
+        <a href="Checkout.html" class="checkout-button">Checkout</a>
+      </div>
+    </div>
+    <div class="description" id="description">
+      <h2>About Our Products</h2>
+      <p>
+        Introducing the revolutionary fabric made of activated carbon, designed
+        to absorb carbon dioxide and protect the environment. Our innovative
+        fabric is not only eco-friendly but also features a hydrophobic coating,
+        ensuring it remains resistant to stains and makes it easy to wipe them
+        off before any mishaps. Mostly crafted from biodegradable threads, it
+        keeps the environment safe when ready to dispose. Embrace this fabric
+        and make a positive impact on the environment while enjoying its
+        fashionable sense!
+      </p>
+      <img
+        src="Benefits.jpeg"
+        alt="Environmentally Friendly Clothes Collection"
+        height="150px"
+        width="30px"
+      />
+    </div>
+    <script>
+      // JavaScript function to handle next image
+      function nextImage(itemId) {
+        var img = document.getElementById(itemId).querySelector("img");
+        var imgSrc = img.getAttribute("src");
+        var nextImgSrc = ""; // Set the new image source based on itemId
+        // Logic to determine next image source
+        switch (itemId) {
+          case "item1":
+            nextImgSrc = "Back 1.jpeg";
+            break;
+          case "item2":
+            nextImgSrc = "Back 2.png";
+            break;
+          case "item3":
+            nextImgSrc = "Back 3.jpeg";
+            break;
+        }
+        img.setAttribute("src", nextImgSrc);
+      }
+
+      // JavaScript function to handle previous image
+      function prevImage(itemId) {
+        var img = document.getElementById(itemId).querySelector("img");
+        var imgSrc = img.getAttribute("src");
+        var prevImgSrc = ""; // Set the new image source based on itemId
+        // Logic to determine previous image source
+        switch (itemId) {
+          case "item1":
+            prevImgSrc = "EVM1.jpeg";
+            break;
+          case "item2":
+            prevImgSrc = "EVM2.png";
+            break;
+          case "item3":
+            prevImgSrc = "EVM3.jpeg";
+            break;
+        }
+        img.setAttribute("src", prevImgSrc);
+      }
+    </script>
+  </body>
+</html>
