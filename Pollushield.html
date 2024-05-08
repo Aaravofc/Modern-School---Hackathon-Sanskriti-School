@@ -12,7 +12,8 @@
         background-image: url("background.jpg");
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        min-height: 100vh; /* Adjusted to min-height for full background coverage */
+        position: relative; /* Added for footer positioning */
       }
       header {
         background-color: #ffffff;
@@ -38,6 +39,10 @@
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         width: 300px;
         cursor: pointer; /* Add cursor pointer */
+        transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+      }
+      .clothes-item:hover {
+        transform: translateY(-5px); /* Added hover effect */
       }
       .clothes-item img {
         width: 100%;
@@ -65,7 +70,6 @@
         background-color: rgb(255, 255, 255);
         overflow: hidden;
       }
-
       .navbar a {
         float: left;
         display: block;
@@ -74,10 +78,19 @@
         padding: 14px 20px;
         text-decoration: none;
       }
-
       .navbar a:hover {
         background-color: #ddd;
         color: black;
+      }
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-align: center;
+        padding: 10px 0;
       }
     </style>
   </head>
@@ -182,6 +195,10 @@
         fashionable sense!
       </p>
     </div>
+    <footer>
+      &copy; 2024 Pollushield Fabrix. All rights reserved.
+      <a href="Contact.html" style="color: #000000">Contact us</a>
+    </footer>
     <script>
       // JavaScript function to handle next image
       function nextImage(itemId) {
@@ -221,6 +238,165 @@
         }
         img.setAttribute("src", prevImgSrc);
       }
+    </script>
+    <script>
+      var jsonDATA = {
+        version: "0.4",
+        title: "Error 404",
+        type: "error-404",
+        metadata: {
+          template_type: "single-404",
+          include_in_zip: "1",
+          elementor_pro_required: "1",
+          elementor_library_type: "error-404",
+          elementor_pro_conditions: ["include\/singular\/not_found404"],
+          additional_template_information: [
+            'This is a "Error 404" template for Elementor Pro.',
+            "This template will display on: 404 Page.",
+          ],
+          wp_page_template: "default",
+        },
+        content: [
+          {
+            id: "33ce35e4",
+            settings: {
+              content_width: {
+                unit: "px",
+                size: 1440,
+                sizes: [],
+              },
+              padding: {
+                unit: "px",
+                top: "300",
+                right: "50",
+                bottom: "200",
+                left: "50",
+                isLinked: false,
+              },
+              padding_tablet: {
+                unit: "px",
+                top: "200",
+                right: "0",
+                bottom: "100",
+                left: "0",
+                isLinked: false,
+              },
+              background_background: "classic",
+              background_image: {
+                url: "https:\/\/kit.wirastudio.co\/arloji\/wp-content\/uploads\/sites\/6\/2021\/06\/error-concept-poster-1-1.jpg",
+                id: 1092,
+              },
+              background_position: "center right",
+              background_size: "cover",
+              background_overlay_background: "classic",
+              background_overlay_color: "#000000",
+              background_overlay_color_stop: {
+                unit: "%",
+                size: 45,
+                sizes: [],
+              },
+              background_overlay_color_b: "#FFFFFF00",
+              background_overlay_color_b_stop: {
+                unit: "%",
+                size: 45,
+                sizes: [],
+              },
+              background_overlay_gradient_angle: {
+                unit: "deg",
+                size: 90,
+                sizes: [],
+              },
+              __globals__: {
+                background_color: "",
+                background_overlay_color: "",
+              },
+            },
+            elements: [
+              {
+                id: "25aaeb1b",
+                settings: {
+                  _column_size: 100,
+                  _inline_size: null,
+                },
+                elements: [
+                  {
+                    id: "57a76dd8",
+                    settings: {
+                      title: "404",
+                      header_size: "h1",
+                      align: "center",
+                      title_color: "#FFFFFF",
+                      typography_typography: "custom",
+                      typography_font_size: {
+                        unit: "px",
+                        size: 200,
+                        sizes: [],
+                      },
+                      typography_font_size_mobile: {
+                        unit: "px",
+                        size: 100,
+                        sizes: [],
+                      },
+                      _margin: {
+                        unit: "px",
+                        top: "-25",
+                        right: "0",
+                        bottom: "-25",
+                        left: "0",
+                        isLinked: false,
+                      },
+                    },
+                    elements: [],
+                    isInner: false,
+                    widgetType: "heading",
+                    elType: "widget",
+                  },
+                  {
+                    id: "5dd8934a",
+                    settings: {
+                      title: "Oppss... Your Page Can't Be FOund",
+                      header_size: "h5",
+                      align: "center",
+                      title_color: "#FFFFFF",
+                      __globals__: {
+                        title_color: "",
+                      },
+                    },
+                    elements: [],
+                    isInner: false,
+                    widgetType: "heading",
+                    elType: "widget",
+                  },
+                  {
+                    id: "73b7fbec",
+                    settings: {
+                      text: "Back To Home",
+                      align: "center",
+                      hover_color: "#FFFFFF",
+                      text_padding: {
+                        unit: "px",
+                        top: "25",
+                        right: "50",
+                        bottom: "25",
+                        left: "50",
+                        isLinked: false,
+                      },
+                    },
+                    elements: [],
+                    isInner: false,
+                    widgetType: "button",
+                    elType: "widget",
+                  },
+                ],
+                isInner: false,
+                elType: "column",
+              },
+            ],
+            isInner: false,
+            elType: "section",
+          },
+        ],
+      };
     </script>
   </body>
 </html>
