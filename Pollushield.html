@@ -15,13 +15,13 @@
         height: 100vh;
       }
       header {
-        background-color: #000000;
+        background-color: #ffffff;
         padding: 10px;
         text-align: center;
       }
       h1 {
-        color: rgb(255, 255, 255);
-        font-family: Brush script M7, cursive;
+        color: rgb(0, 0, 0);
+        font-family: "Roboto", sans-serif;
         font-size: 50px;
       }
       .clothes-container {
@@ -62,14 +62,14 @@
         border-radius: 5px;
       }
       .navbar {
-        background-color: #333;
+        background-color: rgb(255, 255, 255);
         overflow: hidden;
       }
 
       .navbar a {
         float: left;
         display: block;
-        color: white;
+        color: rgb(0, 0, 0);
         text-align: center;
         padding: 14px 20px;
         text-decoration: none;
@@ -88,6 +88,7 @@
     <div class="navbar">
       <a href="#clothes-container">Clothes</a>
       <a href="#description">About Us</a>
+      <a href="Contact.html">Contact Us</a>
     </div>
     <div class="clothes-container" id="clothes-container">
       <div class="clothes-item" id="item1">
@@ -180,12 +181,6 @@
         and make a positive impact on the environment while enjoying its
         fashionable sense!
       </p>
-      <img
-        src="Benefits.jpeg"
-        alt="Environmentally Friendly Clothes Collection"
-        height="150px"
-        width="30px"
-      />
     </div>
     <script>
       // JavaScript function to handle next image
@@ -208,12 +203,11 @@
         img.setAttribute("src", nextImgSrc);
       }
 
-      // JavaScript function to handle previous image
       function prevImage(itemId) {
         var img = document.getElementById(itemId).querySelector("img");
         var imgSrc = img.getAttribute("src");
-        var prevImgSrc = ""; // Set the new image source based on itemId
-        // Logic to determine previous image source
+        var prevImgSrc = "";
+
         switch (itemId) {
           case "item1":
             prevImgSrc = "EVM1.jpeg";
