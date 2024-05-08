@@ -8,89 +8,114 @@
       body {
         margin: 0;
         padding: 0;
-        font-family: Arial, sans-serif;
-        background-image: url("background.jpg");
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh; /* Adjusted to min-height for full background coverage */
-        position: relative; /* Added for footer positioning */
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
       }
+
       header {
-        background-color: #ffffff;
-        padding: 10px;
+        background-color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        height: 2cm;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 36px;
+        margin: 0;
+        color: #555;
+      }
+
+      .navbar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
         text-align: center;
       }
-      h1 {
-        color: rgb(0, 0, 0);
-        font-family: "Roboto", sans-serif;
-        font-size: 50px;
+
+      .navbar li {
+        display: inline;
       }
+
+      .navbar a {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #555;
+        transition: color 0.3s ease;
+      }
+
+      .navbar a:hover {
+        color: #000;
+      }
+
       .clothes-container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 20px;
       }
+
       .clothes-item {
         margin: 10px;
-        padding: 10px;
+        padding: 20px;
         background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         width: 300px;
-        cursor: pointer; /* Add cursor pointer */
-        transition: transform 0.3s ease; /* Added transition for smooth hover effect */
+        transition: transform 0.3s ease;
       }
+
       .clothes-item:hover {
-        transform: translateY(-5px); /* Added hover effect */
+        transform: translateY(-5px);
       }
+
       .clothes-item img {
         width: 100%;
-        border-radius: 5px;
+        border-radius: 8px;
       }
+
       .checkout-button {
-        background-color: #000000;
-        color: white;
-        padding: 8px 16px;
+        background-color: #000;
+        color: #fff;
+        padding: 10px 20px;
         text-align: center;
         text-decoration: none;
         display: block;
         border-radius: 5px;
-        margin-top: 10px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
       }
+
+      .checkout-button:hover {
+        background-color: #333;
+      }
+
       .description {
         text-align: center;
-        margin-top: 20px;
+        padding: 20px;
       }
-      .description img {
-        width: 200px;
-        border-radius: 5px;
-      }
-      .navbar {
-        background-color: rgb(255, 255, 255);
-        overflow: hidden;
-      }
-      .navbar a {
-        float: left;
-        display: block;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-      }
-      .navbar a:hover {
-        background-color: #ddd;
-        color: black;
-      }
+
       footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
+        background-color: #fff;
+        color: #555;
         text-align: center;
-        padding: 10px 0;
+        padding: 20px 0;
+        box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      footer a {
+        color: #000;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: #333;
       }
     </style>
   </head>
@@ -239,164 +264,6 @@
         img.setAttribute("src", prevImgSrc);
       }
     </script>
-    <script>
-      var jsonDATA = {
-        version: "0.4",
-        title: "Error 404",
-        type: "error-404",
-        metadata: {
-          template_type: "single-404",
-          include_in_zip: "1",
-          elementor_pro_required: "1",
-          elementor_library_type: "error-404",
-          elementor_pro_conditions: ["include\/singular\/not_found404"],
-          additional_template_information: [
-            'This is a "Error 404" template for Elementor Pro.',
-            "This template will display on: 404 Page.",
-          ],
-          wp_page_template: "default",
-        },
-        content: [
-          {
-            id: "33ce35e4",
-            settings: {
-              content_width: {
-                unit: "px",
-                size: 1440,
-                sizes: [],
-              },
-              padding: {
-                unit: "px",
-                top: "300",
-                right: "50",
-                bottom: "200",
-                left: "50",
-                isLinked: false,
-              },
-              padding_tablet: {
-                unit: "px",
-                top: "200",
-                right: "0",
-                bottom: "100",
-                left: "0",
-                isLinked: false,
-              },
-              background_background: "classic",
-              background_image: {
-                url: "https:\/\/kit.wirastudio.co\/arloji\/wp-content\/uploads\/sites\/6\/2021\/06\/error-concept-poster-1-1.jpg",
-                id: 1092,
-              },
-              background_position: "center right",
-              background_size: "cover",
-              background_overlay_background: "classic",
-              background_overlay_color: "#000000",
-              background_overlay_color_stop: {
-                unit: "%",
-                size: 45,
-                sizes: [],
-              },
-              background_overlay_color_b: "#FFFFFF00",
-              background_overlay_color_b_stop: {
-                unit: "%",
-                size: 45,
-                sizes: [],
-              },
-              background_overlay_gradient_angle: {
-                unit: "deg",
-                size: 90,
-                sizes: [],
-              },
-              __globals__: {
-                background_color: "",
-                background_overlay_color: "",
-              },
-            },
-            elements: [
-              {
-                id: "25aaeb1b",
-                settings: {
-                  _column_size: 100,
-                  _inline_size: null,
-                },
-                elements: [
-                  {
-                    id: "57a76dd8",
-                    settings: {
-                      title: "404",
-                      header_size: "h1",
-                      align: "center",
-                      title_color: "#FFFFFF",
-                      typography_typography: "custom",
-                      typography_font_size: {
-                        unit: "px",
-                        size: 200,
-                        sizes: [],
-                      },
-                      typography_font_size_mobile: {
-                        unit: "px",
-                        size: 100,
-                        sizes: [],
-                      },
-                      _margin: {
-                        unit: "px",
-                        top: "-25",
-                        right: "0",
-                        bottom: "-25",
-                        left: "0",
-                        isLinked: false,
-                      },
-                    },
-                    elements: [],
-                    isInner: false,
-                    widgetType: "heading",
-                    elType: "widget",
-                  },
-                  {
-                    id: "5dd8934a",
-                    settings: {
-                      title: "Oppss... Your Page Can't Be FOund",
-                      header_size: "h5",
-                      align: "center",
-                      title_color: "#FFFFFF",
-                      __globals__: {
-                        title_color: "",
-                      },
-                    },
-                    elements: [],
-                    isInner: false,
-                    widgetType: "heading",
-                    elType: "widget",
-                  },
-                  {
-                    id: "73b7fbec",
-                    settings: {
-                      text: "Back To Home",
-                      align: "center",
-                      hover_color: "#FFFFFF",
-                      text_padding: {
-                        unit: "px",
-                        top: "25",
-                        right: "50",
-                        bottom: "25",
-                        left: "50",
-                        isLinked: false,
-                      },
-                    },
-                    elements: [],
-                    isInner: false,
-                    widgetType: "button",
-                    elType: "widget",
-                  },
-                ],
-                isInner: false,
-                elType: "column",
-              },
-            ],
-            isInner: false,
-            elType: "section",
-          },
-        ],
-      };
-    </script>
+    <script></script>
   </body>
 </html>
